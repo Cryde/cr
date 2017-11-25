@@ -39,8 +39,6 @@ task('assets:clean', function() {
 });
 after('deploy:symlink', 'assets:clean');
 
-// Migrate database before symlink new release.
-before('deploy:symlink', 'database:migrate');
 after('deploy:update_code', 'npm:install');
 
 
