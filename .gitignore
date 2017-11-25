@@ -16,6 +16,8 @@
 /vendor/
 /web/bundles/
 
+hosts.yml
+
 node_modules/
 web/*.map
 web/*.css
