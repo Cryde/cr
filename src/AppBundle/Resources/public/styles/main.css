@@ -1,3 +1,7 @@
 body {
     background-color: black;
 }
+
+.content {
+    min-height: 600px;
+}

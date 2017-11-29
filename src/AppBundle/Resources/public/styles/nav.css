@@ -1,0 +1,19 @@
+nav {
+    border-top: 2px solid white;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+nav a {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+nav a:hover {
+    color: #c4c4c4;
+    text-decoration: none;
+}
