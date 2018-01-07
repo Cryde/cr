@@ -17,3 +17,15 @@ nav.home a:hover {
     color: #c4c4c4;
     text-decoration: none;
 }
+
+.home .container {
+    opacity: 0;
+}
+
+.animation-container {
+    display: none;
+    position: absolute;
+    top: 0; bottom: 0; left:0; right: 0;
+    opacity: 0;
+    text-align: center;
+}

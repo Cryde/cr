@@ -20,7 +20,12 @@
     <link rel="icon" type="image/png" href="{{ asset('favicon-128.png') }}" sizes="128x128" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}?dfkdddddshf" />
 </head>
-<body class="{% block body_css_class %}{% endblock %}">
+<body class="{% block body_css_class %}home{% endblock %}">
+
+<div class="animation-container">
+    <img src="{{ asset('images/logo.png') }}" class="img-fluid"/>
+</div>
+
 <div class="container">
     <div class="row content">
         {% block menu %}
@@ -36,6 +41,7 @@
         {% block body %}{% endblock %}
     </div>
 </div>
+<script src="{{ asset('app.js') }}"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51282608-2"></script>
 <script>
