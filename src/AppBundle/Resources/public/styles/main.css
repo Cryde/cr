@@ -5,3 +5,13 @@ body {
 .content {
     min-height: 600px;
 }
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+}
+
+.content-container {
+    margin-top: 200px;
+}
