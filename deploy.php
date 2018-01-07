@@ -10,7 +10,7 @@ require 'vendor/deployer/recipes/recipe/npm.php';
 set('repository', 'git@github.com:Cryde/cr.git');
 
 set('git_tty', true); // [Optional] Allocate tty for git on first deployment
-set('keep_releases', 2);
+set('keep_releases', 1);
 add('shared_files', []);
 add('shared_dirs', []);
 add('writable_dirs', []);

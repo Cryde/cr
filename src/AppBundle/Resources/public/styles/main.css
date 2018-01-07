@@ -10,6 +10,10 @@ body.music-container {
     height:100vh;;
 }
 
+.container.container-flex-no-espace {
+    justify-content: flex-start;
+}
+
 h1 {
     text-transform: uppercase;
     color: white;

@@ -5,14 +5,15 @@
 {% block body_css_class %}music-container{% endblock %}
 
 {% block menu %}
-    <nav class="nav">
-        <a class="nav-link active" href="#">CONCEALED REALITY</a>
-    </nav>
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Home</li>
-        </ol>
+    <nav class="navbar fixed-top navbar-light bg-white">
+        <div class="container container-flex-no-espace">
+            <a class="navbar-brand" href="#">CONCEALED REALITY</a>
+
+            <span class="navbar-text custom-breadcrumb">
+                <a href="{{ path('homepage') }}">Home</a> / <span>Music</span>
+            </span>
+        </div>
     </nav>
 {% endblock %}
 
