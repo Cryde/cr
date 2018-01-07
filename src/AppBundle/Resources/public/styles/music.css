@@ -1,0 +1,18 @@
+.music-container h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.media-accounts {
+    margin-top: 70px;
+}
+
+.media-accounts a {
+    display: block;
+    margin-bottom: 15px;
+    max-width: 300px;
+}
+
+.media-accounts .bandcamp {
+    margin-top: 27px;
+}

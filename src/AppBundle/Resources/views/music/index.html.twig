@@ -18,5 +18,32 @@
 {% endblock %}
 
 {% block body %}
+    <div class="col-12 align-self-center music-container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <iframe class="embed-responsive-4by3" width="560" height="315" src="https://www.youtube.com/embed/5kdpLnt7s5Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <h2>Concealed Reality - Oblivion</h2>
+            </div>
 
+            <div class="col-12 col-lg-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jG2FN_d8HG4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <h2>Concealed Reality - Hakai</h2>
+            </div>
+        </div>
+
+        <div class="row media-accounts">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-3"> <a target="_blank" href="http://spoti.fi/2im0MqS"><img src="{{ asset('images/music/music-service_spotify.svg') }}"  class="img-fluid" /></a></div>
+                    <div class="col-lg-3"><a target="_blank" href="https://geo.itunes.apple.com/us/album/synapses-ep/1298338737?mt=1&app=music&itscg=30200&itsct=aff"><img src="{{ asset('images/music/music-service_applemusic.svg') }}"  class="img-fluid" /></a></div>
+                    <div class="col-lg-3"><a target="_blank" href="https://play.google.com/store/music/album/Concealed_Reality_Synapses?id=Bdvyfmuvquyoi3ivcwh54tyq64y"><img src="{{ asset('images/music/music-service_google-play.svg') }}"  class="img-fluid" /></a></div>
+
+                    <div class="col-lg-3 bandcamp"> <a target="_blank" href="https://concealedreality.bandcamp.com/"><img src="{{ asset('images/music/bandcamp-logotype-color.svg') }}" class="img-fluid" /></a></div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 {% endblock %}
