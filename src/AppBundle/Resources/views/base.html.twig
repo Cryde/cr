@@ -2,24 +2,24 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0">
     <title>{% block title %}Concealed Reality{% endblock %}</title>
     <link rel='stylesheet' media='screen' type='text/css' href='{{ asset('app.css') }}'/>
 </head>
-<body>
+<body class="{% block body_css_class %}{% endblock %}">
 <div class="container">
     <div class="row content">
-        <div class="col align-self-center">
-            <img src="{{ asset('images/logo-small.png') }}" class="img-fluid"/>
-            <nav>
-                <a href="">Music</a>
-                <a href="">Shop</a>
-                <a href="">Blog</a>
-            </nav>
-        </div>
-        <div class="col-12 col-lg-8 offset-lg-1 align-self-center">
-            {% block body %}{% endblock %}
-        </div>
+        {% block menu %}
+            <div class="col align-self-center">
+                <img src="{{ asset('images/logo-small.png') }}" class="img-fluid"/>
+                <nav>
+                    <a href="{{ path('music') }}">Music</a>
+                    <a href="">Shop</a>
+                    <a href="">Blog</a>
+                </nav>
+            </div>
+        {% endblock %}
+        {% block body %}{% endblock %}
     </div>
 </div>
 </body>

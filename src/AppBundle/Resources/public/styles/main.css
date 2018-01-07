@@ -2,6 +2,10 @@ body {
     background-color: black;
 }
 
+body.music-container {
+    background-color: white;;
+}
+
 .content {
     height:100vh;;
 }

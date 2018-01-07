@@ -1,5 +1,18 @@
 {% extends '@App/base.html.twig' %}
 
+{% block menu %}
+    <div class="col align-self-center">
+        <img src="{{ asset('images/logo-small.png') }}" class="img-fluid"/>
+        <nav class="home">
+            <a href="{{ path('music') }}">Music</a>
+            <a href="">Shop</a>
+            <a href="">Blog</a>
+        </nav>
+    </div>
+{% endblock %}
+
 {% block body %}
-    <img src="{{ asset('images/home/band.jpg') }}" class="img-fluid"/>
+    <div class="col-12 col-lg-8 offset-lg-1 align-self-center">
+        <img src="{{ asset('images/home/band.jpg') }}" class="img-fluid"/>
+    </div>
 {% endblock %}
