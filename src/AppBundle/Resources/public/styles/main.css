@@ -3,7 +3,7 @@ body {
 }
 
 .content {
-    min-height: 900px;
+    height:100vh;;
 }
 
 h1 {
