@@ -1,4 +1,5 @@
 import animations from '../utils/animations';
+import Cookies from 'js-cookie';
 
 export default () => {
 
@@ -7,6 +8,7 @@ export default () => {
   }
 
   if (!haveSeenIntro()) {
+    Cookies.set('have-seen-intro', 1);
     displayIntro();
   } else {
     displayContent();
@@ -14,7 +16,7 @@ export default () => {
 }
 
 function haveSeenIntro() {
-  return false;
+  return parseInt(Cookies.get('have-seen-intro'));
 }
 
 function displayIntro() {

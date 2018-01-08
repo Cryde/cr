@@ -7,7 +7,8 @@
     "build": "brunch b -p"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2"
+    "bootstrap": "^4.0.0-beta.2",
+    "js-cookie": "^2.2.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
